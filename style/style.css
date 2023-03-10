@@ -1,1 +1,58 @@
 /* Style CSS */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+
+/* Section 1 */
+.s1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .2rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.s1-btn {
+    margin-top: 1rem;
+}
+
+.s1-p1 {
+    margin-top: 1rem;
+    width: 250px;
+}
+
+/* Section 2 */
+.s2-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: .2rem;
+    margin-top: 2rem;
+}
+
+.s2-p2 {
+    align-self: center;
+    width: 250px;
+    margin-top: 1rem;
+}
+
+.s2-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
