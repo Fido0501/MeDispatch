@@ -1,4 +1,5 @@
 /* Style CSS */
+/* Proměnné */
 main {
     display: flex;
     flex-direction: column;
@@ -14,45 +15,510 @@ section {
     width: 80%;
 }
 
+hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1px;
+    width: 60%;
+    background-color: var(--sec-color);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 
-/* Section 1 */
-.s1-container {
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--pri-color);
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+p {
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: left;
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: 2rem;
+    padding: .5rem .8rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: var(--pri-color);
+    color: #fff;
+    border: none;
+}
+
+.btn-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.text {
+    font-weight: 200;
+}
+
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    h5 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    h6 {
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    section {
+        width: 60%;
+    }
+
+    hr {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 450px) {
+
+}
+/* Main Page | Section 1 */
+.mp-s1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.mp-s1-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: .2rem;
     margin-top: 2rem;
-    width: 100%;
 }
 
-.s1-btn {
+.mp-s1-btn {
     margin-top: 1rem;
 }
 
-.s1-p1 {
+.mp-s1-p1 {
     margin-top: 1rem;
     width: 250px;
 }
 
-/* Section 2 */
-.s2-container {
-    width: 100%;
+@media screen and (min-width: 1000px) {
+    .mp-s1 {
+        flex-direction: row;
+        gap: 10vw;
+    }
+
+    .mp-s1-p1 {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 450px) {
+
+}
+
+/* Main Page | Section 2 */
+.mp-s2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.mp-s2-container {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     gap: .2rem;
-    margin-top: 2rem;
 }
 
-.s2-p2 {
+.mp-s2-p2 {
     align-self: center;
     width: 250px;
     margin-top: 1rem;
 }
 
-.s2-btn-container {
+.mp-s2-btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .mp-s2 {
+        flex-direction: row;
+        margin-bottom: 5rem;
+    }
+
+    .mp-s2-p2 {
+        width: 350px;
+    }
+
+    .mp-s2-container .text {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 450px) {
+
+}
+
+/* Main Page | Section 3 */
+.mp-s3-container {
+    width: 100%;
+}
+
+.mp-s3-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: .5rem;
+    gap: 1rem;
+}
+
+.card-1 {
+    background-image: url("/img/img/z1.png");
+}
+
+.card-2 {
+    background-image: url("/img/img/z2.png");
+}
+
+.card-3 {
+    background-image: url("/img/img/z3.png");
+}
+
+.card-4 {
+    background-image: url("/img/img/z4.png");
+}
+
+.mp-s3-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.mp-s3-card-hd {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #fff;
+    text-align: right;
+    bottom: 0;
+    margin-right: .2rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .mp-s3-cards {
+        flex-direction: row;
+    }
+
+    .mp-s3-card {
+        width: 200px;
+        height: 300px;
+    }
+
+    .mp-3-container h3 {
+        text-align: center;
+        align-self: center;
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 450px) {
+
+}
+
+/* Main Page | Section 3 */
+.mp-s4-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    color: #fff;
+    height: 150px;
+}
+
+.mp-s4-countdown-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url("/img/img/cd_mid.png");*/
+    background-color: var(--pri-color);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.mp-s4-hd {
+    font-size: 1.5rem;
+}
+
+.mp-s4-time {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.mp-s4-img {
+    height: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+    
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 450px) {
+
+}
+
+/* Main Page | Section 4*/
+.mp-s5-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mp-s5-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.mp-s5-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--sec-color);
+    padding: .5rem;
+    width: 100px;
+    height: 140px;
+    position: relative;
+}
+
+#letter {
+    position: absolute;
+    font-size: 5rem;
+    z-index: -1;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--sec-color);
+}
+
+/* O nás | Section 1*/
+.o-s1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+.o-s1-container h3 {
+    align-self: baseline;
+}
+
+@media screen and (min-width: 1000px) {
+    
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 450px) {
+
+}
+
+/* Aktuality | Section 1*/
+.a-s1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.a-s1-container h3 {
+    align-self: baseline;
+}
+
+@media screen and (min-width: 1000px) {
+    
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 450px) {
+
+}
+
+/* Jak to funguje | Section 1*/
+
+@media screen and (min-width: 1000px) {
+    
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 450px) {
+
+}
+/* Kontakt | Section 1*/
+.k-s1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.k-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    border: 1px solid #000;
+    flex-direction: column;
+    padding: 2rem;
+    width: 200px;
+}
+
+.k-card h3 {
+    font-size: 1.6rem;
+}
+
+.k-card h6 {
+    text-align: left;
+    font-size: .8rem;
+}
+
+.k-card-text {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: .5rem;
+}
+
+@media screen and (min-width: 1000px) {
+    
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 450px) {
+
+}
+/* Vyzkoušet | Section 1*/
+
+@media screen and (min-width: 1000px) {
+    
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 450px) {
+
 }

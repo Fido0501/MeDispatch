@@ -6,7 +6,7 @@
 /* ROOT */
 :root {
     --pri-color: #AB0000;
-    --sec-color: ;
+    --sec-color: #D8D8D8;
     --ter-color: ;
 
     --background-color: ;
@@ -19,59 +19,6 @@
     padding: 0;
     background-color: var(--background-color);
     font-family: 'Inter', sans-serif;
-}
-
-h1 {
-    font-size: 2rem;
-    font-weight: 400;
-    color: #000;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: 400;
-    color: var(--pri-color);
-    text-align: center;
-}
-
-h3 {
-    font-size: 1.8rem;
-    font-weight: 400;
-}
-
-h6 {
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: center;
-}
-
-p {
-    margin-top: .5rem;
-    font-size: 1.2rem;
-    font-weight: 200;
-    text-align: left;
-}
-
-.btn {
-    font-size: 1rem;
-    font-weight: 2rem;
-    padding: .5rem .8rem;
-    border: 1px solid #000;
-    border-radius: 10px;
-}
-
-.btn2 {
-    background-color: var(--pri-color);
-    color: #fff;
-    border: none;
-}
-
-.btn-container {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
 }
 
 /* Header */
@@ -94,10 +41,6 @@ header {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.75);
-}
-
-.nav > a {
-    font-family: 'Inter', sans-serif;
 }
 
 .logo-nav {
@@ -296,3 +239,28 @@ header {
 }
 
 /* Footer */
+footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    width: 180px;
+}
+
+.footer {
+    flex-direction: column;
+}
+
+.footer, .footer-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.sm-icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--sec-color);
+}

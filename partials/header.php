@@ -1,12 +1,8 @@
 <div class="nav">
     <a href="index.php" class=""><img class="logo" src="./img/img/logo.png" alt=""></a>
-    <div class="nav-div"></div>
     <a href="o-nas.php" class="link">O nás</a>
-    <div class="nav-div"></div>
     <a href="aktuality.php" class="link">Aktuality</a>
-    <div class="nav-div"></div>
     <a href="jak-to-funguje.php" class="link">Jak to funguje?</a>
-    <div class="nav-div"></div>
     <a href="kontakt.php" class="link">Kontakt</a>
     <a href="vyzkouset.php" class="link nav-button">Vyzkoušet</a>
     <div id="nav_hamburger">
