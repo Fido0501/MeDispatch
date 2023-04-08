@@ -72,12 +72,19 @@ p {
     border: 1px solid #000;
     border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    transition: .3s;
 }
 
 .btn2 {
     background-color: var(--pri-color);
     color: #fff;
     border: none;
+}
+
+.btn:hover {
+    scale: 1.1;
 }
 
 .btn-container {
@@ -236,10 +243,94 @@ p {
 
 /* Main Page | Section 3 */
 .mp-s3-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
 }
 
-.mp-s3-cards {
+.mp-s3-container h3 {
+    align-self: baseline;
+    margin-bottom: 2rem;
+}
+
+.mp-s3-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.mp-s3-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--sec-color);
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 2rem;
+    width: 200px;
+    height: min-content;
+    gap: .5rem;
+}
+
+.mp-s3-card h4{
+    color: var(--pri-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Main Page | Section 4 */
+.mp-s4 {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.mp-s4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pri-color);
+    width: 100%;
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mp-s4-countdown-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.mp-s4-hd, .mp-s4-time {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.mp-s4-time {
+    font-weight: 300;
+}
+
+/* Main Page | Section 5 */
+.mp-s5 {
+    margin-top: 2rem;
+}
+
+.mp-s5-container {
+    width: 100%;
+}
+
+.mp-s5-container h3{
+    margin-bottom: 2rem;
+}
+
+.mp-s5-cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,7 +356,7 @@ p {
     background-image: url("/img/img/z4.png");
 }
 
-.mp-s3-card {
+.mp-s5-card {
     background-repeat: no-repeat;
     background-size: cover;
     height: 80px;
@@ -275,7 +366,7 @@ p {
     align-items: flex-end;
 }
 
-.mp-s3-card-hd {
+.mp-s5-card-hd {
     font-size: 2rem;
     font-weight: 200;
     color: #fff;
@@ -285,240 +376,163 @@ p {
 }
 
 @media screen and (min-width: 1000px) {
-    .mp-s3-cards {
+    .mp-s5-cards {
         flex-direction: row;
     }
 
-    .mp-s3-card {
+    .mp-s5-card {
         width: 200px;
         height: 300px;
     }
+}
 
-    .mp-3-container h3 {
-        text-align: center;
-        align-self: center;
-        font-size: 5rem;
+/* Vyzkoušet | Section 1 */
+.v-s1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.v-s1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--pri-color);
+    border-radius: 10px;
+    padding: 1rem;
+    gap: .5rem;
+
+}
+
+.v-s2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+input[type=text], input[type=email], input[type=number], textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+
+#modal-btn{
+    width: 100%;
+    background-color: var(--pri-color);
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+}
+  
+#modal-btn:hover {
+    scale: 1.01;
+}
+
+.form {
+    padding: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 4rem;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 1rem;
+    width: 80%;
+    height: fit-content;
+}
+
+.modal-content h3 {
+    font-size: 1.5rem;
+    color: var(--pri-color);
+}
+
+.modal-content .text {
+    margin-top: 2rem;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -.5rem;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+    .modal-content {
+        width: 40%;
     }
 }
 
-@media screen and (min-width: 800px) {
-
-}
-
-@media screen and (min-width: 450px) {
-
-}
-
-/* Main Page | Section 3 */
-.mp-s4-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    width: 100%;
-    color: #fff;
-    height: 150px;
-}
-
-.mp-s4-countdown-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* background-image: url("/img/img/cd_mid.png");*/
-    background-color: var(--pri-color);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-.mp-s4-hd {
-    font-size: 1.5rem;
-}
-
-.mp-s4-time {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-.mp-s4-img {
-    height: 100%;
-}
-
-@media screen and (min-width: 1000px) {
-    
-}
-
-@media screen and (min-width: 800px) {
-
-}
-
-@media screen and (min-width: 450px) {
-
-}
-
-/* Main Page | Section 4*/
-.mp-s5-container {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.mp-s5-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.mp-s5-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid var(--sec-color);
-    padding: .5rem;
-    width: 100px;
-    height: 140px;
-    position: relative;
-}
-
-#letter {
-    position: absolute;
-    font-size: 5rem;
-    z-index: -1;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    color: var(--sec-color);
-}
-
-/* O nás | Section 1*/
-.o-s1-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    flex-direction: column;
-}
-
-.o-s1-container h3 {
-    align-self: baseline;
-}
-
-@media screen and (min-width: 1000px) {
-    
-}
-
-@media screen and (min-width: 800px) {
-
-}
-
-@media screen and (min-width: 450px) {
-
-}
-
-/* Aktuality | Section 1*/
-.a-s1-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+/* Kontakt | Section 1 */
+.k-s1 {
     margin-top: 2rem;
 }
 
-.a-s1-container h3 {
-    align-self: baseline;
-}
-
-@media screen and (min-width: 1000px) {
-    
-}
-
-@media screen and (min-width: 800px) {
-
-}
-
-@media screen and (min-width: 450px) {
-
-}
-
-/* Jak to funguje | Section 1*/
-
-@media screen and (min-width: 1000px) {
-    
-}
-
-@media screen and (min-width: 800px) {
-
-}
-
-@media screen and (min-width: 450px) {
-
-}
-/* Kontakt | Section 1*/
 .k-s1-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 2rem;
+    margin-top: 1rem;
     flex-wrap: wrap;
 }
 
 .k-card {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    text-align: left;
-    border: 1px solid #000;
     flex-direction: column;
-    padding: 2rem;
-    width: 200px;
+    border: 1px solid var(--sec-color);
+    border-radius: 10px;
+    padding: 1rem;
 }
 
-.k-card h3 {
-    font-size: 1.6rem;
+.k-card-text {
+    font-size: 1.1rem;
 }
 
 .k-card h6 {
     text-align: left;
-    font-size: .8rem;
+    margin-bottom: 1rem;
 }
 
-.k-card-text {
-    font-size: 1rem;
-    font-weight: 300;
-    margin-top: .5rem;
-}
-
-@media screen and (min-width: 1000px) {
-    
-}
-
-@media screen and (min-width: 800px) {
-
-}
-
-@media screen and (min-width: 450px) {
-
-}
-/* Vyzkoušet | Section 1*/
-
-@media screen and (min-width: 1000px) {
-    
-}
-
-@media screen and (min-width: 800px) {
-
-}
-
-@media screen and (min-width: 450px) {
-
+.k-photo {
+    margin-top: 2rem;
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
 }

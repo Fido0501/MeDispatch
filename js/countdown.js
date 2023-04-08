@@ -7,10 +7,10 @@ var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
 var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((t % (1000 * 60)) / 1000);
 
-document.getElementById("demo").innerHTML = days + "d " 
-+ hours + "h " + minutes + "m " + seconds + "s ";
+document.getElementById("time").innerHTML = days + " dní " 
++ hours + " hodin " + minutes + " minut " + seconds + " sekund ";
     if (t < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "Aplikace je vydaná!";
+        document.getElementById("time").innerHTML = "Aplikace je vydaná!";
     }
 }, 1000);
