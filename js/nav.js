@@ -12,3 +12,4 @@ nav_hamburger.addEventListener("click", function(){
         document.querySelector(".nav-modal").classList.add("active");
     }
 });
+

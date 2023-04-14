@@ -21,8 +21,13 @@
             ?>
         </header>
 
+         <!-- Scroll -->
+        <a class="scroll" href="#home">
+            <img class="scroll-arrow" src="./img/icons/arrow_up.svg" alt="arrow_up">
+        </a>
+
         <!-- Main --> 
-        <main>
+        <main id="home">
             <section class="mp-s1">
                 <div class="mp-s1-container">
                     <h1>Informační systém</h1>
@@ -50,7 +55,7 @@
             <hr>
 
             <section class="mp-s2">
-                <div class="mp-s2-container">
+                <div class="mp-s2-container order2">
                     <h3 id="o-nas">Kdo jsme?</h3>
                     <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio. Nam quis nulla. Integer in sapien. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. In rutrum.</p>
                     <div class="btn-container">
