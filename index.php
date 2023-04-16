@@ -14,7 +14,7 @@
         <!-- title -->
         <title>MeDispatch</title>
     </head>
-    <body>
+    <body> 
         <!-- Header -->
         <header>
             <?php
