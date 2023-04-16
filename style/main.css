@@ -120,13 +120,6 @@ p {
     font-weight: 200;
 }
 
-h1 {
-    font-size: 2rem;
-    font-weight: 400;
-    color: #000;
-    text-align: center;
-}
-
 @media screen and (min-width: 1000px) {
     h1 {
         font-size: 3rem;
@@ -413,7 +406,7 @@ footer {
 .sm-icon {
     width: 30px;
     height: 30px;
-    background-color: var(--sec-color);
+    cursor: pointer;
 }
 
 /* Form */
@@ -548,11 +541,25 @@ textarea {
     width: 40px;
 }
 
-/* Order */
-.order1 {
-    order: 1;
+
+#home, #o-nas, #jak-to-funguje, #zjistit-vice {
+    scroll-margin-top: 100px;
 }
 
-.order2{
-    order: 2;
+@media screen and (min-width: 1000px) {
+    #o-nas {
+        scroll-margin-top: 350px;
+    }
+    
+    #home, #jak-to-funguje, #zjistit-vice {
+        scroll-margin-top: 250px;
+    }
+}
+
+/* Order */
+
+@media screen and (min-width: 1000px) {
+    .order {
+        order: 1;
+    }
 }

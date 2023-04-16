@@ -9,6 +9,7 @@
         <!-- link -->
         <link rel="stylesheet" href="style/main.css">
         <link rel="stylesheet" href="style/style.css">
+        <link rel="icon" type="image/x-icon" href="./img/icons/icon.svg">
 
         <!-- title -->
         <title>MeDispatch</title>
@@ -32,8 +33,9 @@
                         <div class="k-card-text">+420 000 000 000</div>
                         <div class="k-card-text">kohoutek.jakub@purkynka.cz</div>
                         <img class="k-photo" src="./img/img/kuba.png" alt="">
+                        <div class="text">Jsem student informačních technologií z Brna a je mi 19 let. Rád cestuji a kafe piju zásadně bez cukru. Kromě toho se zajímám o programování, operační systémy Linux a zdravotnictví a v létě dělám vedoucího na dětském táboře. Mám praxi jako prodejce, baví mě komunikovat s lidmi a zjišťovat, co přesně potřebují.</div>
                         <div class="btn-container">
-                            <div class="btn btn2">Kontaktovat</div>
+                            <a href="mailto:kohoutek.jakub@purkynka.cz" class="btn btn2">Kontaktovat</a>
                         </div>
                     </div>
 
@@ -43,14 +45,15 @@
                         <div class="k-card-text">+420 000 000 000</div>
                         <div class="k-card-text">krivanek.filip@purkynka.cz</div>
                         <img class="k-photo" src="./img/img/filip.jpg" alt="">
+                        <div class="text">Stejně jako Kuba jsem 19letý student z Brna. Studuji webdesign a baví mě se v něm dále rozvíjet a získávat zkušenosti. S tím je spojený i můj zájem o technologie. Mám rád hudbu, poslouchám hlavně klasický rock, ale k práci si hodím metal. V budoucnu chci pokračovat s grafikou, designem, i samotným kódováním.</div>
                         <div class="btn-container">
-                            <div class="btn btn2">Kontaktovat</div>
+                            <a href="mailto:krivanek.filip@purkynka.cz" class="btn btn2">Kontaktovat</a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <img src="" alt="">
+            <img src="./img/img/k1.svg" alt="k1" class="mp-s2-p2">
 
             <section class="form">
                 <form action="">

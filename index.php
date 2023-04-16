@@ -9,6 +9,7 @@
         <!-- link -->
         <link rel="stylesheet" href="style/main.css">
         <link rel="stylesheet" href="style/style.css">
+        <link rel="icon" type="image/x-icon" href="./img/icons/icon.svg">
 
         <!-- title -->
         <title>MeDispatch</title>
@@ -49,20 +50,20 @@
                         <a href="vyzkouset.php" class="btn">Vyzkoušet</a>
                     </div>  
                 </div>
-                <img src="./img/img/p2.svg" alt="p2" class="mp-s2-p2">
+                <img src="./img/img/p2.svg" alt="p2" class="mp-s2-p2 reveal">
             </section>
 
             <hr>
 
             <section class="mp-s2">
-                <div class="mp-s2-container order2">
+                <div class="mp-s2-container order">
                     <h3 id="o-nas">Kdo jsme?</h3>
                     <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio. Nam quis nulla. Integer in sapien. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. In rutrum.</p>
                     <div class="btn-container">
                         <a href="kontakt.php" class="btn">Kontaktovat</a>
                     </div>  
                 </div>
-                <img src="./img/img/p2.svg" alt="p2" class="mp-s2-p2">
+                <img src="./img/img/p3.svg" alt="p3" class="mp-s2-p2  reveal">
             </section>
 
             <hr>
@@ -72,7 +73,7 @@
                     <h3>Proč?</h3>
                     <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio. Nam quis nulla. Integer in sapien. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. In rutrum.</p>
                 </div>
-                <img src="./img/img/p2.svg" alt="p2" class="mp-s2-p2">
+                <img src="./img/img/p4.svg" alt="p4" class="mp-s2-p2 reveal">
             </section>
 
             <hr>
@@ -81,19 +82,19 @@
                 <div class="mp-s3-container">
                     <h3 id="jak-to-funguje">Jak to funguje?</h3>
                     <div class="mp-s3-card-container">
-                        <div class="mp-s3-card">
+                        <div class="mp-s3-card reveal">
                             <img src="./img/img/gps.png" alt="poloha">
                             <h4>POLOHA</h4>
                             <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio. Nam quis nulla. Integer in sapien. </div>
                         </div>
 
-                        <div class="mp-s3-card">
+                        <div class="mp-s3-card reveal t2">
                             <img src="./img/img/time-left.png" alt="čas">
                             <h4>ČAS</h4>
                             <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio. Nam quis nulla. Integer in sapien. </div>
                         </div>
 
-                        <div class="mp-s3-card">
+                        <div class="mp-s3-card reveal t4">
                             <img src="./img/img/speedometer.png" alt="rychlost">
                             <h4>RYCHLOST</h4>
                             <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio. Nam quis nulla. Integer in sapien. </div>
@@ -117,19 +118,19 @@
                 <div class="mp-s5-container">
                     <h3>Zajišťuje komunikaci</h3>
                     <div class="mp-s5-cards">
-                        <div class="mp-s5-card card-1">
+                        <div class="mp-s5-card card-1 reveal">
                             <div class="mp-s5-card-hd">Na zemi</div>
                         </div>
 
-                        <div class="mp-s5-card card-2">
+                        <div class="mp-s5-card card-2 reveal t2">
                             <div class="mp-s5-card-hd">V horách</div>
                         </div>
 
-                        <div class="mp-s5-card card-3">
+                        <div class="mp-s5-card card-3 reveal t4">
                             <div class="mp-s5-card-hd">Na vodě</div>
                         </div>
 
-                        <div class="mp-s5-card card-4">
+                        <div class="mp-s5-card card-4 reveal t6">
                             <div class="mp-s5-card-hd">Ve vzduchu</div>
                         </div>
                     </div>
@@ -152,5 +153,6 @@
     <!-- Scripts -->
     <script src="./js/nav.js"></script>
     <script src="./js/countdown.js"></script>
+    <script src="./js/loading.js"></script>
 
 </html>

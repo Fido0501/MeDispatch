@@ -9,6 +9,7 @@
         <!-- link -->
         <link rel="stylesheet" href="style/main.css">
         <link rel="stylesheet" href="style/style.css">
+        <link rel="icon" type="image/x-icon" href="./img/icons/icon.svg">
 
         <!-- title -->
         <title>MeDispatch</title>
@@ -31,6 +32,8 @@
             </section>
 
             <img src="" alt="">
+            
+            <img src="./img/img/v1.svg" alt="v1" class="mp-s2-p2">
 
             <section class="form">
                 <form action="">
@@ -52,6 +55,9 @@
                     <span class="close">&times;</span>
                     <h3>Potvrzeno!</h3>
                     <div class="text">Vaše údaje byly odeslány. Vyčkejte na potvrzovací email, který vám zpřístupní aplikaci.</div>
+                    <div class="btn-container">
+                        <a href="https://app.medispatch.cz" class="btn">Přejít na přihlášení do aplikace</a>
+                    </div>  
                 </div>
             </div>
 
