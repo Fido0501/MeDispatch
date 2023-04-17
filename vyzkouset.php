@@ -45,8 +45,10 @@
 
                     <label for="phone">Telefonní číslo</label>
                     <input type="number" id="phone" name="phone" placeholder="XXXXXXXXX" required>
-                
-                    <input value="Potvrdit" id="modal-btn">
+
+                    <div class="btn-container">
+                        <a id="modal-btn" class="btn">Potvrdit</a>
+                    </div>  
                 </form>
             </section>
 
@@ -56,7 +58,7 @@
                     <h3>Potvrzeno!</h3>
                     <div class="text">Vaše údaje byly odeslány. Vyčkejte na potvrzovací email, který vám zpřístupní aplikaci.</div>
                     <div class="btn-container">
-                        <a href="https://app.medispatch.cz" class="btn">Přejít na přihlášení do aplikace</a>
+                        <a href="http://app.medispatch.cz" class="btn">Přejít na přihlášení do aplikace</a>
                     </div>  
                 </div>
             </div>

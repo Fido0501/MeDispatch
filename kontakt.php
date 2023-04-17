@@ -66,7 +66,9 @@
                     <label for="text">Zpráva</label>
                     <textarea type="number" id="email" name="textarea" placeholder="Zde pište..." ></textarea>
                 
-                    <input value="Potvrdit" id="modal-btn">
+                    <div class="btn-container">
+                        <a id="modal-btn" class="btn">Odeslat</a>
+                    </div> 
                 </form>
             </section>
 

@@ -534,6 +534,7 @@ textarea {
     border-radius: 10px;
     cursor: pointer;
     border: 3px solid var(--pri-color);
+    z-index: 2;
 }
 
 .scroll-arrow {
